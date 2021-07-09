@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+			integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+			crossorigin="anonymous"
+		/>
+		<!-- Primary Meta Tags -->
+		<title>Business Profit Calculator.</title>
+		<meta name="title" content="Business Profit Calculator." />
+		<meta
+			name="description"
+			content="Calculate your products total profit and margin in just a click. Dhamaka & eorange double taka voucher premade profit calculation available."
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://faisalahammad.github.io/profit-calculator/" />
+		<meta property="og:title" content="Business Profit Calculator." />
+		<meta
+			property="og:description"
+			content="Calculate your products total profit and margin in just a click. Dhamaka & eorange double taka voucher premade profit calculation available."
+		/>
+		<meta property="og:image" content="https://i.ibb.co/cQXGGqx/Profit-Calculator.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://faisalahammad.github.io/profit-calculator/" />
+		<meta property="twitter:title" content="Business Profit Calculator." />
+		<meta
+			property="twitter:description"
+			content="Calculate your products total profit and margin in just a click. Dhamaka & eorange double taka voucher premade profit calculation available."
+		/>
+		<meta property="twitter:image" content="https://i.ibb.co/cQXGGqx/Profit-Calculator.jpg" />
+		<style>
+			.jumbotron {
+				padding: 25px 0;
+			}
+			.jumbotron h1 {
+				font-size: 36px;
+				font-weight: bold;
+			}
+			.form-control {
+				border-color: #999;
+			}
+			.main-heading {
+				background: #343a40;
+				border-radius: 5px;
+				padding: 20px 0;
+				color: #fff;
+			}
+			footer.jumbotron {
+				margin-bottom: 0;
+				margin-top: 50px;
+			}
+			footer.jumbotron p {
+				margin-bottom: 0;
+			}
+			.result {
+				min-height: 50px;
+				font-size: 22px;
+				background: greenyellow;
+				padding: 20px 0px;
+			}
+			@media all and (max-width: 414px) {
+				.form-group {
+					display: inline-block;
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header class="jumbotron text-center">
+			<h1 class="display-3">Profit Calculator</h1>
+		</header>
+
+		<div class="container mt-5">
+			<div class="row text-center">
+				<div class="col-lg-12 col-xs-10 offset-xs-1">
+					<form class="form-inline">
+						<div class="form-group mr-3">
+							<input type="number" name="purPrice" id="purPrice" class="form-control" placeholder="Purchase Price" required />
+						</div>
+						<div class="form-group mr-3">
+							<input type="number" name="sellPrice" id="sellPrice" class="form-control" placeholder="Sell Price" required />
+						</div>
+						<button type="submit" name="calculate" id="calculate" class="btn btn-primary mr-2">Calculate</button>
+						<button type="submit" name="reset" id="reset" class="btn btn-danger">Reset</button>
+					</form>
+
+					<div class="result text-center mt-5">Profit is loading...</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 mb-3 mt-5">
+					<h2 class="main-heading text-center mb-3">
+						Double Taka Voucher <br />
+						<small>(Dhamaka/eorange)</small>
+					</h2>
+				</div>
+
+				<div class="col-lg-12 col-xs-12">
+					<table class="table table-bordered table-striped table-dark table-responsive-sm">
+						<thead>
+							<tr>
+								<th colspan="6" class="text-center">BAJAJ</th>
+							</tr>
+							<tr>
+								<th scope="col">Model</th>
+								<th scope="col">MRP</th>
+								<th scope="col">Buy</th>
+								<th scope="col">Sell</th>
+								<th scope="col">Profit</th>
+								<th scope="col">Margin</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">CT-100 ES</th>
+								<td>95,500</td>
+								<td>47,750</td>
+								<td>86,000</td>
+								<td>38,250</td>
+								<td>80.10%</td>
+							</tr>
+							<tr>
+								<th scope="row">Platina 100 ES</th>
+								<td>99,500</td>
+								<td>49,750</td>
+								<td>89,500</td>
+								<td>39,750</td>
+								<td>79.90%</td>
+							</tr>
+							<tr>
+								<th scope="row">Discover 110cc</th>
+								<td>117,500</td>
+								<td>58,750</td>
+								<td>105,500</td>
+								<td>46,750</td>
+								<td>79.57%</td>
+							</tr>
+							<tr>
+								<th scope="row">Discover 125cc</th>
+								<td>131,900</td>
+								<td>65,950</td>
+								<td>118,000</td>
+								<td>52,050</td>
+								<td>78.92%</td>
+							</tr>
+							<tr>
+								<th scope="row">Pulsar SD</th>
+								<td>169,900</td>
+								<td>84,950</td>
+								<td>153,000</td>
+								<td>68,050</td>
+								<td>80.11%</td>
+							</tr>
+							<tr>
+								<th scope="row">Pulsar DD</th>
+								<td>180,900</td>
+								<td>90,450</td>
+								<td>163,000</td>
+								<td>72,550</td>
+								<td>80.21%</td>
+							</tr>
+						</tbody>
+
+						<thead>
+							<tr>
+								<th colspan="6" class="text-center">YAMAHA</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<th scope="row">FZS V3</th>
+								<td>280,000</td>
+								<td>140,000</td>
+								<td>250,000</td>
+								<td>110,000</td>
+								<td>78.57%</td>
+							</tr>
+
+							<tr>
+								<th scope="row">MT15 INDO</th>
+								<td>510,000</td>
+								<td>255,000</td>
+								<td>455,000</td>
+								<td>200,000</td>
+								<td>78.43%</td>
+							</tr>
+							<tr>
+								<th scope="row">R15 INDO</th>
+								<td>530,000</td>
+								<td>265,000</td>
+								<td>470,000</td>
+								<td>250,000</td>
+								<td>77.36%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<footer class="jumbotron text-center">
+			<p class="lead">Built with ❤️</p>
+		</footer>
+		<script src="./main.js"></script>
+	</body>
+</html>
